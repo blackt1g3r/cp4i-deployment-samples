@@ -13,10 +13,10 @@
 #
 # PARAMETERS:
 #   -n : <NAMESPACE> (string), Defaults to 'cp4i'
-#   -r : <REPO> (string), Defaults to 'https://github.com/IBM/cp4i-deployment-samples.git'
+#   -r : <REPO> (string), Defaults to 'https://github.com/blackt1g3r/cp4i-deployment-samples.git'
 #   -b : <BRANCH> (string), Defaults to 'main'
-#   -f : <DEFAULT_FILE_STORAGE> (string), Default to 'cp4i-file-performance-gid'
-#   -g : <DEFAULT_BLOCK_STORAGE> (string), Default to 'cp4i-block-performance'
+#   -f : <DEFAULT_FILE_STORAGE> (string), Default to 'ocs-storagecluster-cephfs'
+#   -g : <DEFAULT_BLOCK_STORAGE> (string), Default to 'ocs-storagecluster-cephfs'
 #   -a : <HA_ENABLED>, default to 'true'
 #
 #   With defaults values
