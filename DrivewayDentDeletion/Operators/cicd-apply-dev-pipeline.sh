@@ -38,13 +38,13 @@ function usage() {
 # default vars
 NAMESPACE="cp4i"
 BRANCH="main"
-REPO="https://github.com/IBM/cp4i-deployment-samples.git"
+REPO="https://github.com/blackt1g3r/cp4i-deployment-samples.git"
 CURRENT_DIR=$(dirname $0)
 source $CURRENT_DIR/../../products/bash/utils.sh
 MISSING_PARAMS="false"
-DEFAULT_FILE_STORAGE="cp4i-file-performance-gid"
-DEFAULT_BLOCK_STORAGE="cp4i-block-performance"
-HA_ENABLED="true"
+DEFAULT_FILE_STORAGE="ocs-storagecluster-cephfs"
+DEFAULT_BLOCK_STORAGE="ocs-storagecluster-cephfs"
+HA_ENABLED="false"
 
 while getopts "n:r:b:f:g:a:" opt; do
   case ${opt} in
