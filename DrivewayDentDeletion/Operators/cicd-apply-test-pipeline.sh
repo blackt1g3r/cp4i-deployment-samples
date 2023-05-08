@@ -13,10 +13,10 @@
 #
 # PARAMETERS:
 #   -n : <NAMESPACE> (string), Defaults to 'cp4i'
-#   -r : <REPO> (string), Defaults to 'https://github.com/IBM/cp4i-deployment-samples.git'
+#   -r : <REPO> (string), Defaults to 'https://github.com/blackt1g3r/cp4i-deployment-samples.git'
 #   -b : <BRANCH> (string), Defaults to 'main'
-#   -f : <DEFAULT_FILE_STORAGE> (string), Default to 'cp4i-file-performance-gid'
-#   -g : <DEFAULT_BLOCK_STORAGE> (string), Default to 'cp4i-block-performance'
+#   -f : <DEFAULT_FILE_STORAGE> (string), Default to 'ocs-storagecluster-cephfs'
+#   -g : <DEFAULT_BLOCK_STORAGE> (string), Default to 'ocs-storagecluster-cephfs'
 #   -a : <HA_ENABLED>, default to 'true'
 #
 #   With defaults values
@@ -38,13 +38,13 @@ function usage() {
 # default vars
 NAMESPACE="cp4i"
 BRANCH="main"
-REPO="https://github.com/IBM/cp4i-deployment-samples.git"
+REPO="https://github.com/blackt1g3r/cp4i-deployment-samples.git"
 CURRENT_DIR=$(dirname $0)
 source $CURRENT_DIR/../../products/bash/utils.sh
 MISSING_PARAMS="false"
-DEFAULT_FILE_STORAGE="cp4i-file-performance-gid"
-DEFAULT_BLOCK_STORAGE="cp4i-block-performance"
-HA_ENABLED="true"
+DEFAULT_FILE_STORAGE="ocs-storagecluster-cephfs"
+DEFAULT_BLOCK_STORAGE="ocs-storagecluster-cephfs"
+HA_ENABLED="false"
 
 while getopts "n:r:b:f:g:a:" opt; do
   case ${opt} in
