@@ -25,8 +25,8 @@ source $CURRENT_DIR/../../products/bash/utils.sh
 
 NAMESPACE="cp4i"
 DDD_DEMO_TYPE="dev"
-BLOCK_STORAGE_CLASS="cp4i-block-performance"
-FILE_STORAGE_CLASS="cp4i-file-performance-gid"
+BLOCK_STORAGE_CLASS="ocs-storagecluster-cephfs"
+FILE_STORAGE_CLASS="ocs-storagecluster-cephfs"
 
 while getopts "b:f:n:t" opt; do
   case ${opt} in
